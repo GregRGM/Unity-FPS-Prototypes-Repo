@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6706475300111994632}
   - component: {fileID: 4074795457977388651}
   m_Layer: 0
-  m_Name: Projectile_Grenade
+  m_Name: Projectile_Cactus_Grenade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,10 +61,11 @@ MonoBehaviour:
   root: {fileID: 694845038933029220}
   tip: {fileID: 3119386985412111839}
   maxLifeTime: 5
-  impactVFX: {fileID: 100000, guid: decf25da566de433cb1a874aa0e6dd00, type: 3}
+  impactVFX: {fileID: 5984095482564825331, guid: afddf6158de2ea6428844debcf01189e,
+    type: 3}
   impactVFXLifetime: 5
   impactVFXSpawnOffset: 0.1
-  impactSFXClip: {fileID: 8300000, guid: ef980d09b569380459e609fe90ef1db2, type: 3}
+  impactSFXClip: {fileID: 8300000, guid: 93fbb109633e844259ea828442bda0cb, type: 3}
   hittableLayers:
     serializedVersion: 2
     m_Bits: 4294967295
