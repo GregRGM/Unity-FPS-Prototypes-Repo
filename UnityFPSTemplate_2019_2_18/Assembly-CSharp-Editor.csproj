@@ -366,6 +366,9 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="EasyNotes">
+      <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Assets/Zero Rare/Easy Notes/EasyNotes.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>

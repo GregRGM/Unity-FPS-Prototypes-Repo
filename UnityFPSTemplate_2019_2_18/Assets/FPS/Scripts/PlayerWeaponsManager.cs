@@ -5,6 +5,9 @@ using UnityEngine.Events;
 [RequireComponent(typeof(PlayerInputHandler))]
 public class PlayerWeaponsManager : MonoBehaviour
 {
+    [Tooltip("Shows object name Weapons Manager is assigned to")]
+    public GameObject WeaponHolder;
+
     public enum WeaponSwitchState
     {
         Up,
@@ -16,7 +19,7 @@ public class PlayerWeaponsManager : MonoBehaviour
     [Tooltip("List of weapon the player will start with")]
     public List<WeaponController> startingWeapons = new List<WeaponController>();
 
-    [Header("References")]
+    [Header("References")]    
     [Tooltip("Secondary camera used to avoid seeing weapon go throw geometries")]
     public Camera weaponCamera;
     [Tooltip("Parent transform where all weapon will be added in the hierarchy")]

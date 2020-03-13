@@ -581,13 +581,13 @@ GameObject:
   - component: {fileID: 814417836257332542}
   - component: {fileID: 1360575517897679518}
   - component: {fileID: 298744117520805562}
+  - component: {fileID: 8779709200581744551}
   - component: {fileID: 783424908873546082}
   - component: {fileID: 3122855503829242450}
   - component: {fileID: 6268538116984687401}
   - component: {fileID: 4205022973215787166}
   - component: {fileID: 1272397862697293493}
   - component: {fileID: 1661717823}
-  - component: {fileID: 8779709200581744551}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -704,11 +704,48 @@ MonoBehaviour:
   - {fileID: 8323776800172828795, guid: b318fabc73446b746a1005cede0c4ceb, type: 3}
   - {fileID: 8323776800172828795, guid: 31d97e822763d1f4cb769f7e3f7f7333, type: 3}
   - {fileID: 8323776800172828795, guid: 3439b4874b7b44e4eb2216314c46b85c, type: 3}
+  WeaponHolder: {fileID: 0}
   weaponCamera: {fileID: 2286125971047457827}
   weaponParentSocket: {fileID: 3891163784698469781}
   defaultWeaponPosition: {fileID: 4354021110288562838}
   aimingWeaponPosition: {fileID: 4354021110288562838}
   downWeaponPosition: {fileID: 2050759424792167117}
+  bobFrequency: 10
+  bobSharpness: 10
+  defaultBobAmount: 0.05
+  aimingBobAmount: 0.02
+  recoilSharpness: 50
+  maxRecoilDistance: 0.2
+  recoilRestitutionSharpness: 10
+  aimingAnimationSpeed: 14
+  defaultFOV: 60
+  weaponFOVMultiplier: 1
+  weaponSwitchDelay: 0.2
+  FPSWeaponLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+--- !u!114 &8779709200581744551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7253983127304857660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6b4f98e62f1d104f8658bba08e5d56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingWeapons:
+  - {fileID: 8323776800172828795, guid: b318fabc73446b746a1005cede0c4ceb, type: 3}
+  - {fileID: 8323776800172828795, guid: 31d97e822763d1f4cb769f7e3f7f7333, type: 3}
+  - {fileID: 8323776800172828795, guid: 3439b4874b7b44e4eb2216314c46b85c, type: 3}
+  WeaponHolder: {fileID: 0}
+  weaponCamera: {fileID: 8918579930893229565}
+  weaponParentSocket: {fileID: 8619230237192069141}
+  defaultWeaponPosition: {fileID: 1129902133585392296}
+  aimingWeaponPosition: {fileID: 1129902133585392296}
+  downWeaponPosition: {fileID: 4840015274448505455}
   bobFrequency: 10
   bobSharpness: 10
   defaultBobAmount: 0.05
@@ -987,41 +1024,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8779709200581744551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7253983127304857660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b4f98e62f1d104f8658bba08e5d56f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingWeapons:
-  - {fileID: 8323776800172828795, guid: b318fabc73446b746a1005cede0c4ceb, type: 3}
-  - {fileID: 8323776800172828795, guid: 31d97e822763d1f4cb769f7e3f7f7333, type: 3}
-  - {fileID: 8323776800172828795, guid: 3439b4874b7b44e4eb2216314c46b85c, type: 3}
-  weaponCamera: {fileID: 8918579930893229565}
-  weaponParentSocket: {fileID: 8619230237192069141}
-  defaultWeaponPosition: {fileID: 1129902133585392296}
-  aimingWeaponPosition: {fileID: 1129902133585392296}
-  downWeaponPosition: {fileID: 4840015274448505455}
-  bobFrequency: 10
-  bobSharpness: 10
-  defaultBobAmount: 0.05
-  aimingBobAmount: 0.02
-  recoilSharpness: 50
-  maxRecoilDistance: 0.2
-  recoilRestitutionSharpness: 10
-  aimingAnimationSpeed: 14
-  defaultFOV: 60
-  weaponFOVMultiplier: 1
-  weaponSwitchDelay: 0.2
-  FPSWeaponLayer:
-    serializedVersion: 2
-    m_Bits: 1024
 --- !u!1 &7383874627095517793
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,11 +1180,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 806887368}
     m_Modifications:
-    - target: {fileID: 8929146388027618498, guid: 7468cd18030a0204ab08baf7ac36ff1e,
-        type: 3}
-      propertyPath: m_Name
-      value: VFX_JetpackTrail_right
-      objectReference: {fileID: 0}
     - target: {fileID: 6226484437272429138, guid: 7468cd18030a0204ab08baf7ac36ff1e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1238,6 +1235,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8929146388027618498, guid: 7468cd18030a0204ab08baf7ac36ff1e,
+        type: 3}
+      propertyPath: m_Name
+      value: VFX_JetpackTrail_right
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7468cd18030a0204ab08baf7ac36ff1e, type: 3}
 --- !u!4 &3648923683150522996 stripped
@@ -1259,11 +1261,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 806887368}
     m_Modifications:
-    - target: {fileID: 8929146388027618498, guid: 7468cd18030a0204ab08baf7ac36ff1e,
-        type: 3}
-      propertyPath: m_Name
-      value: VFX_JetpackTrail_left
-      objectReference: {fileID: 0}
     - target: {fileID: 6226484437272429138, guid: 7468cd18030a0204ab08baf7ac36ff1e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1318,6 +1315,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8929146388027618498, guid: 7468cd18030a0204ab08baf7ac36ff1e,
+        type: 3}
+      propertyPath: m_Name
+      value: VFX_JetpackTrail_left
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7468cd18030a0204ab08baf7ac36ff1e, type: 3}
