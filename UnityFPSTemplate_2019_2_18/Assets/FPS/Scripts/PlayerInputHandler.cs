@@ -157,10 +157,14 @@ public class PlayerInputHandler : MonoBehaviour
     {
         if (CanProcessInput())
         {
-
+            //check if gamepad switchweapon axis isn't 0 & set bool to it
             bool isGamepad = Input.GetAxis(GameConstants.k_ButtonNameGamepadSwitchWeapon) != 0f;
+            //axisName is either gamepad if isGamepad is true or ButtonNameSwitchWeapon
             string axisName = isGamepad ? GameConstants.k_ButtonNameGamepadSwitchWeapon : GameConstants.k_ButtonNameSwitchWeapon;
 
+            //ButtonNameSwitchWeapon IS ScrollWheel; ButtonNameNextWeapon IS Q & E keys
+
+            //Check if axis of scrollwheel or gamepad axis 
             if (Input.GetAxis(axisName) > 0f)
                 return -1;
             else if (Input.GetAxis(axisName) < 0f)

@@ -2,6 +2,20 @@
 using UnityEngine.Events;
 
 [RequireComponent(typeof(CharacterController), typeof(PlayerInputHandler), typeof(AudioSource))]
+
+/*TODO: Map Switch weapon keys to each active gun
+            -WheelUp: Right
+            -WheelDown: UpRight
+            -Q & E: Left & UpLeft
+            //Toggle between all weapons and empty
+        Individual Weapon keys fire gun
+            -LeftMouse: Right
+            -WheelButton: Left
+            -R: TopRight
+            -F: TopLeft
+     */
+  
+
 public class PlayerCharacterController : MonoBehaviour
 {
     [Header("References")]
