@@ -428,6 +428,9 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>D:/2019.2.18f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
+    <Reference Include="EasyNotes">
+      <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Assets/Zero Rare/Easy Notes/EasyNotes.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Analytics.Editor">
       <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
@@ -439,9 +442,6 @@
     </Reference>
     <Reference Include="System.IO.Compression.FileSystem">
       <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Library/PackageCache/com.unity.connect.share@1.0.9-preview/Plugins/System.IO.Compression.FileSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="EasyNotes">
-      <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Assets/Zero Rare/Easy Notes/EasyNotes.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/2019.2.18f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

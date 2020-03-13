@@ -267,6 +267,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="EasyNotes">
+      <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Assets/Zero Rare/Easy Notes/EasyNotes.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.Advertisements">
       <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
@@ -284,9 +287,6 @@
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
-    </Reference>
-    <Reference Include="EasyNotes">
-      <HintPath>D:/Unity Prototypes/Unity FPS Prototypes Repo/UnityFPSTemplate_2019_2_18/Assets/Zero Rare/Easy Notes/EasyNotes.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>D:/2019.2.18f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
